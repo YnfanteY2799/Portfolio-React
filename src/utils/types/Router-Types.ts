@@ -3,3 +3,8 @@ export type Route = {
   component: Function;
   childs?: Array<{ route: string; component: Function }>;
 };
+
+export type BtnProps = {
+  title: string;
+  animated?: boolean;
+};
