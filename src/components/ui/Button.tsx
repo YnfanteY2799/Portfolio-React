@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { ButtonProps, clsx, variants, sizes } from "../../utils/types/Types";
 import { Spinner } from "./Spinner";
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+const BaseButton = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       type = "button",
@@ -45,7 +45,23 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   )
 );
 
-Button.displayName = "Button";
-
-export default Button;
-// LATER ON https://v1.tailwindcss.com/components/buttons
+export default function Button({
+  title = "",
+  isLoading = false,
+  className = "",
+  variant = "primary",
+  size = "md",
+  ...props
+}: ButtonProps) {
+  return (
+    <BaseButton
+      isLoading={isLoading}
+      className={className}
+      variant={variant}
+      size={size}
+      {...props}
+    >
+      {title}
+    </BaseButton>
+  );
+}

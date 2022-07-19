@@ -11,12 +11,12 @@ export const sizes = {
 };
 
 export const variants = {
-  basic: clsx("text-white hover:text-primary", "focus:ring-4", "border-none"),
+  basic: clsx("text-white hover:text-slate-700", "focus:ring-4", "border-none"),
   primary: clsx(
-    "bg-primary hover:bg-white",
-    "text-white hover:text-primary",
-    "border-primary hover:border-primary",
-    "focus:ring-4 focus:ring-primary/50",
+    "bg-slate-700 hover:bg-white",
+    "text-white hover:text-slate-700",
+    "border-slate-700 hover:border-slate-700",
+    "focus:ring-4 focus:ring-slate-700/50",
     "shadow-sm"
   ),
   secondary: clsx(
@@ -27,15 +27,15 @@ export const variants = {
     "shadow-sm"
   ),
   white: clsx(
-    "bg-white hover:bg-primary",
-    "text-primary",
+    "bg-white hover:bg-slate-700",
+    "text-slate-700",
     "hover:text-white",
     "outline-none border-none",
     "shadow-sm"
   ),
   transparent: clsx(
     "bg-white hover:bg-transparent",
-    "text-primary",
+    "text-slate-700",
     "hover:text-white",
     "outline-none border-none",
     "shadow-sm"
@@ -61,11 +61,11 @@ export const variants = {
     "focus:ring-4 focus:ring-red-600/50",
     "shadow-sm"
   ),
-  "outline-primary": clsx(
-    "hover:bg-primary",
-    "text-primary hover:text-white",
-    "border-primary border-2 hover:border-primary",
-    "focus:ring-4 focus:ring-primary/50",
+  "outline-slate-700": clsx(
+    "hover:bg-slate-700",
+    "text-slate-700 hover:text-white",
+    "border-slate-700 border-2 hover:border-slate-700",
+    "focus:ring-4 focus:ring-slate-700/50",
     "shadow-sm"
   ),
   "outline-secondary": clsx(

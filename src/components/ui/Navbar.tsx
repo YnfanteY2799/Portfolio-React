@@ -35,7 +35,7 @@ export default function Navbar(): ReactElement {
           </div>
 
           {/* Component Center */}
-          <div className="flex items-center justify-center">
+          <div className="hidden flex items-center justify-center">
             <form action="#" method="GET" className="hidden lg:block lg:pl-32">
               <label htmlFor="topbar-search" className="sr-only">
                 Search

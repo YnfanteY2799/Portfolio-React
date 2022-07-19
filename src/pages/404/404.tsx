@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import BackGround from "../../assets/background-404.jpg";
-import Button from "../../components/ui/Button";
+import { Button } from "../../components/components";
 
 export default function ErrorNotFound() {
   return (
@@ -16,7 +16,7 @@ export default function ErrorNotFound() {
             404
           </p>
           <Link to="/">
-            <Button title="Take me Back!" variant="primary"/>
+            <Button title="Take me Back!" variant="primary" />
           </Link>
         </div>
       </div>
