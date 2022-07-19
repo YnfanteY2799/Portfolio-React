@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
-import { ButtonProps, clsx, variants, sizes } from "../../utils/types/Types";
+import clsx from "../../utils/functions/clsx";
+import { ButtonProps, variants, sizes } from "../../utils/types/Types";
 import { Spinner } from "./Spinner";
 
 const BaseButton = forwardRef<HTMLButtonElement, ButtonProps>(

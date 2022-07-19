@@ -1,4 +1,4 @@
-import { clsx } from "../../utils/types/Types";
+import clsx from "../../utils/functions/clsx";
 
 const sizes = {
   sm: "h-4 w-4",

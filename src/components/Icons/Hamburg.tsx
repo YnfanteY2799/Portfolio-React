@@ -1,9 +1,17 @@
 import { Icon } from "@iconify/react";
+import x from "@iconify/icons-bi/x";
+import hamburger from "@iconify/icons-ci/hamburger";
 
-export default function HamburgIcon({ isActive = false }: { isActive?: boolean }) {
+export default function HamburgIcon({
+  isActive = false,
+  className = "",
+}: {
+  isActive?: boolean;
+  className?: string;
+}) {
   return isActive ? (
-    <Icon icon="bi:x" width={30} />
+    <Icon icon={x} width={30} className={className} />
   ) : (
-    <Icon icon="ci:hamburger" width={30} />
+    <Icon icon={hamburger} width={30} className={className} />
   );
 }

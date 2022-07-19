@@ -1,7 +1,4 @@
-// function
-export function clsx(...args: string[]) {
-  return args.join(" ");
-}
+import clsx from "../functions/clsx";
 
 // Costants
 export const sizes = {
