@@ -6,11 +6,6 @@ import "./css/index.css";
 // APP ROOT
 
 export default function App() {
-
-  const containerStyleProps = {
-
-  }
-
   return (
     <BrowserRouter>
       <Routes>
@@ -36,7 +31,7 @@ export default function App() {
             )
         )}
       </Routes>
-      <Toaster position="top-right" reverseOrder={true}/>
+      <Toaster position="top-right" reverseOrder={true} />
     </BrowserRouter>
   );
 }

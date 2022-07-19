@@ -1,4 +1,4 @@
-import { Route } from "../utils/types/Router-Types";
+import { Route } from "../utils/types/Types";
 import ErrorNotFound from "./404/404";
 import HomePage from "./Home/Home";
 

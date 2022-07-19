@@ -16,7 +16,7 @@ export default function ErrorNotFound() {
             404
           </p>
           <Link to="/">
-            <Button title="Take me Back!" animated={true}/>
+            <Button title="Take me Back!" variant="primary"/>
           </Link>
         </div>
       </div>
