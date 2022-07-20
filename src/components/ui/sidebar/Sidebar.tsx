@@ -277,6 +277,7 @@ export default function Sidebar({
           </div>
         </div>
       </aside>
+      <div className="bg-gray-900 inset-0 z-10" id="sidebarBackdrop"/>
     </>
   );
 }

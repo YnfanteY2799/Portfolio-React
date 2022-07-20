@@ -100,3 +100,10 @@ export type Route = {
   childs?: Array<{ route: string; component: Function }>;
 };
 
+export type IconSpinnerProps = {
+  className?:string;
+  hFlip?: boolean; 
+  vFlip?: boolean; 
+  inline?: boolean;
+
+}
