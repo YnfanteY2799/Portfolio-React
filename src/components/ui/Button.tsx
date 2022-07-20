@@ -11,6 +11,7 @@ const BaseButton = forwardRef<HTMLButtonElement, ButtonProps>(
       variant = "primary",
       size = "md",
       isLoading = false,
+      animated = false,
       startIcon,
       endIcon,
       ...props
@@ -52,6 +53,7 @@ export default function Button({
   className = "",
   variant = "primary",
   size = "md",
+  animated = false,
   ...props
 }: ButtonProps) {
   return (

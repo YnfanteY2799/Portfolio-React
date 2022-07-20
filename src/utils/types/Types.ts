@@ -91,6 +91,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: keyof typeof variants;
   size?: keyof typeof sizes;
   isLoading?: boolean;
+  animated?: boolean;
 } & IconProps;
 
 export type Route = {
