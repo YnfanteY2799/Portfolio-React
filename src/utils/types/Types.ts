@@ -1,3 +1,4 @@
+import { IconifyIcon } from "@iconify/react";
 import clsx from "../functions/clsx";
 
 // Costants
@@ -101,9 +102,21 @@ export type Route = {
 };
 
 export type IconSpinnerProps = {
-  className?:string;
-  hFlip?: boolean; 
-  vFlip?: boolean; 
+  className?: string;
+  hFlip?: boolean;
+  vFlip?: boolean;
   inline?: boolean;
+};
 
-}
+export type SidebarProps = {
+  isActive?: boolean;
+  content?: Array<SidebarItemProps>;
+};
+
+export type SidebarItemProps = {
+  title?: string;
+  path?: string;
+  rightIcon?: IconifyIcon | string;
+  leftIcon?: IconifyIcon | string;
+  divider?: boolean;
+};

@@ -17,9 +17,12 @@ export default function HomePage() {
   return (
     <>
       <Navbar appName={_NAME} isActive={isActive} actionChanger={openSidebar} />
-      <div className="flex overflow-hidden bg-white pt-16">
-      <Sidebar isActive={isActive} />
-        aaaaaaaaaaaaaaaaaa
+      <Sidebar isActive={isActive}/>
+      <div
+        className={`flex overflow-hidden bg-white pt-16 ${
+          isActive ? "pl-64" : ""
+        }`}
+      >
         <Outlet />
       </div>
     </>
