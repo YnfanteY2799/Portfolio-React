@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "devNCU": "ncu -u && npm i && vite --port 3090 ",
-    "dev": "vite --port 3090 ",
+    "devNCU": "ncu -u && npm i && vite",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
